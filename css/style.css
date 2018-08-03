@@ -1,0 +1,264 @@
+body{
+    background-color: #fff;
+    color:#000;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+p, .cv{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.navbar{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 1.5rem 1rem;
+    background-color: transparent;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    right: 0;
+    top: 0;
+}
+.front{
+    background-color: #000;
+    background-image: url('http://placehold.it/1700x1000/333');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.navbar .nav-item{
+    padding: .8rem;
+}
+.navbar-nav .nav-link{
+    color:#fff;
+}
+.navbar-nav .nav-link.active{
+    color:#c49b66;
+}
+.navbar-nav .nav-item:hover .nav-link{
+    color: #c49b66;
+    cursor: pointer;
+}
+.title-container{
+    position: absolute;
+    top: 0;
+    left: 100px;
+    color: #fff;
+    height: 100%;
+}
+.title-container .header-title{
+    font-size:70px;
+}
+.title-container .iam-title{
+    font-size:50px;
+}
+.title-container .i-am{
+    color: #c49b66;
+    display: inline-block;
+    margin-right:20px;
+    font-weight: 300;
+}
+.title-container .typed-text{
+    font-size:55px;
+}
+.title-container .cursor{
+    display: inline-block;
+    height: 40px;
+    width: 3px;
+    opacity: 1;
+    background-color: #c49b66;
+    animation-name: cursor;
+    animation-duration: .7s;
+
+    animation-iteration-count: infinite;
+}
+
+.section{
+    padding:80px 0px;
+}
+.cv-doc,.my-projects{
+    padding: 100px 0px;
+    text-align: center;
+    color:#fff;
+    background: url('../img/parallax-number.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+}
+.my-projects{
+    background: url('../img/parallax-projects.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.my-projects .btn{
+    margin-bottom: 10px;
+    margin-right: 10px;    
+}
+.cv-doc:before,
+.my-projects:before{
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    z-index: -1;
+}
+.cv-doc .title{
+    z-index: 1;
+}
+.btn{
+    border-radius: 0;
+    background-color: #c49b66;
+    border: 1px solid rgba(196, 155, 102, 1);
+    color:#fff;
+}
+.btn.btn-xlg{
+    padding: 2.38rem 2.75rem;
+    font-size:2rem;
+}
+.my-projects .btn.btn-xlg{
+    background-color: transparent;
+    border-color:#c49b66;
+    color: #c49b66;
+}
+.my-projects .btn.btn-xlg:hover{
+    background-color: #c49b66;
+    color: #fff;
+}
+.btn:hover,
+.btn:focus{
+    background-color: transparent;
+    border: 1px solid rgba(196, 155, 102, 1);
+    color: #fff;
+}
+.what-can-i-do, .contact-me{
+    padding: 100px 0px;
+    text-align: center;
+}
+.what-can-i-do .container .row [class^="col-"]:last-child{
+    border-right: none;
+}
+.what-can-i-do .container .title + .row{
+    border-bottom: 1px solid #ccc;
+}
+.what-can-i-do .title{
+    margin-bottom: 50px;
+}
+.what-can-i-do .cando-container{
+    border-right:1px solid #ccc;
+    padding-top:20px;
+}
+.what-can-i-do .cando-item{
+    margin-top: 20px;
+
+}
+.what-can-i-do .cando-item h5{
+    font-size:25px;
+    margin-bottom:20px;
+}
+.section .title{
+    display: inline-block;
+}
+.section .title h4{
+    font-size:30px;
+    display: inline-block;
+    margin-bottom: 0;
+}
+.section .title .divider{
+    margin: 20px 0px;
+    background-color: #c49b66;
+}
+.section .description{
+    color:#777;
+}
+.social .social-link{
+    margin-right:10px;
+    width: 40px;
+    height: 40px;
+    border:1px solid rgba(120,120,120, .4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    transition: all .3s ease;
+}
+.social .social-link:hover{
+    background-color: #c49b66;
+    color:#fff;
+    border-color:rgba(120,120,120, 0);
+}
+.cv{
+    padding:80px 0px;
+}
+.cv h3{
+    font-size:50px;
+    color:#c49b66;
+    margin-bottom: 0;
+}
+.cv .title{
+    margin-top: 20px;
+}
+.cv .item-info{
+    margin-bottom: 50px;
+}
+.cv .item-info h6{
+    font-size:17px;
+}
+.cv .item-info p{
+    color:#777;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills .item-info h6{
+    margin: 0;
+}
+.skills .item-info{
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+form{
+    max-width:700px;
+    margin: 0 auto;
+}
+form .form-control{
+    border:none;
+    border-radius: 0;
+    border-bottom:1px solid #aaa;
+}
+form .form-control:focus{
+    outline: 0;
+    border-bottom:2px solid #c49b66;
+    box-shadow: none;
+}
+form .btn:hover,
+form .btn:focus{
+    color: #333;
+}
+footer{
+    text-align: center;
+    background-color: #000;
+    padding: 50px 0;
+    color:#aaa;
+}
+footer p{
+    margin: 0;
+}
+@keyframes cursor{
+    from {
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
